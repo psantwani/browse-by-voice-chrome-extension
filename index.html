@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Browse By Voice</title>
+      <meta name="description" content="Fullscreen Layout with Page Transitions" />
+      <meta name="keywords" content="fullscreen layout, boxes, responsive, page transitions, css transitions, jquery, portfolio, template" />
+      <meta name="author" content="Codrops" />
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <link rel="stylesheet" type="text/css" href="css/component-Input.css" />
+      <link rel="stylesheet" type="text/css" href="css/componentLinks.css" />
+      <link rel="stylesheet" type="text/css" href="css/button.css" />
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+      <link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+      <link rel="stylesheet" type="text/css" href="css/progressButton.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/tags.css" />
+	  <link rel="stylesheet" type="text/css" href="css/ns-style-bar.css" />
+	  <link rel="stylesheet" type="text/css" href="css/ns-default.css" />
+	  <link rel="stylesheet" href="css/sky-forms.css" />
+	  <link rel="stylesheet" type="text/css" href="css/style5.css" />
+	  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	  <link rel="stylesheet" type="text/css" href="css/notybuttons.css"/>
+	  <script src="js/jquery.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+	  <script src="js/jquery.validate.min.js"></script>	  	  
+   </head>
+   <body>
+   
+	<div id = "header_logo">
+	  Browse By Voice
+	  </div>
+	  
+	<label class="hide">my extension ID is <input id="appid" type="text" class="hide"  readonly></input></label>
+    <div class="hide">
+      <label for="sendText" >Send message:</label>
+      <input id="sendText" type="text" ></input>
+      <label for="sendId" >to application ID </label>
+      <input id="sendId" type="text" value = "gijbijhniclhmmhlhcgcjlhoieohchbf" ></input>
+      <button id="send" >Send</button>	  
+    </div>		
+	
+      <div class="container">	  
+         <div id="bl-main" class="bl-main">
+            <section id="bl-record-section">
+               <div class="bl-box" id="RecordSection">
+                  <h2 class="bl-icon bl-icon-about">Record</h2>
+               </div>
+               <div class="bl-content">
+                  <div class="switch demo3" id = "onoffdiv">
+                     <input type="checkbox" id="onoffbutton">
+                     <label><i></i></label>
+                  </div>
+                  <div class="panel">
+                     <h3 id="CSS Panel">Last Command</h3>
+                     <div class="blackboard">
+                        <p id = "cmdMessage">Switch on the button and Browse by Voice.</p>
+                     </div>
+                  </div>
+               </div>
+               <span class="bl-icon bl-icon-close"></span>
+            </section>
+            <section id="bl-work-section">
+               <div class="bl-box">
+                  <h2 class="bl-icon bl-icon-works">Settings</h2>
+               </div>
+               <div class="bl-content">
+                  <h2>My Settings</h2>                  
+                  <ul id="bl-work-items">                     
+                     <li data-panel="panel-1">
+                        <a href="#">
+                           <button class="button button--line button--effect-1 button--anim-1">
+                              <span class="morph-shape" data-morph-active="M286,113c0,0-68.8-6-136-6c-78.2,0-137,6-137,6s2-15.802,2-50.5C15,33.999,13,12,13,12s59-6,137-6c85,0,136,6,136,6s-3,17.598-3,52C283,96.398,286,113,286,113z">
+                                 <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                                    <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z"/>
+                                 </svg>
+                              </span>
+                              <span class="button__text">BASIC</span>
+                           </button>
+                        </a>
+                     </li>
+                     <br>
+                     <li data-panel="panel-2">
+                        <a href="#">
+                           <button class="button button--line button--effect-1 button--anim-1">
+                              <span class="morph-shape" data-morph-active="M286,113c0,0-68.8-6-136-6c-78.2,0-137,6-137,6s2-15.802,2-50.5C15,33.999,13,12,13,12s59-6,137-6c85,0,136,6,136,6s-3,17.598-3,52C283,96.398,286,113,286,113z">
+                                 <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                                    <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z"/>
+                                 </svg>
+                              </span>
+                              <span class="button__text">ADVANCED</span>
+                           </button>
+                        </a>
+                     </li>
+                     <br>
+                     <li data-panel="panel-3">
+                        <a href="#">
+                           <button class="button button--line button--effect-1 button--anim-1" id = "newlogin">
+                              <span class="morph-shape" data-morph-active="M286,113c0,0-68.8-6-136-6c-78.2,0-137,6-137,6s2-15.802,2-50.5C15,33.999,13,12,13,12s59-6,137-6c85,0,136,6,136,6s-3,17.598-3,52C283,96.398,286,113,286,113z">
+                                 <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                                    <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z"/>
+                                 </svg>
+                              </span>
+                              <span class="button__text">NEW LOGIN</span>
+                           </button>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <span class="bl-icon bl-icon-close"></span>
+            </section>
+            <section id="bl-android-section">
+               <div class="bl-box">
+                  <h2 class="bl-icon bl-icon-blog">Android</h2>
+               </div>
+               <div class="bl-content">
+                  <h2>Connect to<br>Phone</h2>
+                  <article class="androidpage">
+                     <!-- <p>Your Session Passkey : <span>192.168.1.3</span></p>
+                     <p>Connection Status : <br><span>Fail</span></p>
+                     <p>Download App : <span><a href="#">Link</a></span></p> -->
+					 <form id="sky-form" class="sky-form" >
+					 
+					 <section>
+						<div class="row">
+							<label class="label col col-4">Password</label>
+							<div class="col col-8">
+								<label class="input">
+									<i class="icon-append icon-lock"></i>
+									<input type="text" name="password" id="sessionPassword"/>
+								</label>								
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="row">
+							<div class="col col-4"></div>
+							<div class="col col-8">
+								<button type="button" class="button" id="sessionConnect">Connect to Android</button>					
+							</div>
+						</div>
+					</section>					
+					<section>
+					<a href="#" class="a-btn">
+						<span class="a-btn-symbol">i</span>
+						<span class="a-btn-text">Download App</span> 
+						<!-- <span class="a-btn-slide-text">Windows Vista / Windows 7</span> -->
+						<span class="a-btn-slide-icon"></span>
+					</a>
+					</section>
+					</form>
+					<!-- <br> -->
+					<!-- <h4>* The password will be provided by the Android app.</h4>	 -->
+					
+                  </article>
+               </div>
+               <span class="bl-icon bl-icon-close"></span>
+            </section>
+            <section id="bl-help-section">
+               <div class="bl-box">
+                  <h2 class="bl-icon bl-icon-contact">Help</h2>
+               </div>
+               <div class="bl-content">
+                  <h2>Get in touch</h2>
+                  <section class="color-1">
+                     <nav class="cl-effect-1" >
+						<a href="#">How to use</a>
+                        <a href="https://drive.google.com/open?id=0ByJAt3kpXtexajJkWElGSDRDLU0" target="_blank">List of Commands</a>                        
+                        <a href="#">Suggestions</a>
+                        <a href="#">Donate</a>
+                        <a href="#">About Us</a>
+                     </nav>
+                  </section>
+               </div>
+               <span class="bl-icon bl-icon-close"></span>
+            </section>
+            <!-- Panel items for the works -->
+            <div class="bl-panel-items" id="bl-panel-work-items">
+               <div data-panel="panel-1">
+                  <div id="basicQuestionsParent">
+                     <div id = "basicQuestions">                        
+                        <section>
+                           <select class="cs-select cs-skin-elastic" id="deviceslist">
+                              <option value="" disabled selected>Select Recording Device</option>
+                              <option value="microphone" >Microphone | Headset</option>
+                              <option value="android" >Android App</option>
+                           </select>
+                        </section>
+                        <br>
+                        <section>
+                           <select class="cs-select cs-skin-elastic" id = "defaultEmail">
+                              <option value="" disabled selected>Select Default Email</option>
+                              <option value="gmail">Gmail</option>
+                              <option value="mail.yahoo">Yahoo</option>
+                              <option value="hotmail">Hotmail</option>
+                           </select>
+                        </section>
+                        <br>
+                        <section>
+                           <select class="cs-select cs-skin-elastic" id="defaultSearchEngine">
+                              <option value="" disabled selected>Default Search Engine</option>
+                              <option value="google" >Google</option>
+                              <option value="yahoo" >Yahoo</option>
+                              <option value="bing" >Bing</option>
+                              <option value="ask" >Ask</option>
+                           </select>
+                        </section>
+                     </div>
+                  </div>
+               </div>
+               <div data-panel="panel-2">
+                  <div id="passwordManager">
+                     <h2>Password Manager</h2>
+                     <div id = "MasterLogin">
+                        <h4>Enter/Create Master Key</h4>
+                        <br>
+                        <span class="input input--minoru" id = "masterKey">
+                        <input class="input__field input__field--minoru" type="password" id="masterPassword" placeholder='Password'/></label>
+                        </span>
+                        <button class="progress-button" data-style="fill" id="MasterKeySubmit" data-horizontal>Submit</button>	
+                     </div>
+                     <div id = "showPassword">
+                        <ul class="tags" id="tagList">
+                           <li class="addedTag">Facebook<span class="tagRemove">x</span></li>
+                           <li><input type="text" name="tags[]" class="tagText" value="Facebook"></li>
+                           <!-- <li></li> -->
+                           <li class="addedTag">Gmail<span class="tagRemove">x</span></li>
+                           <li><input type="text" name="tags[]" class="tagText" value="Gmail"></li>
+                           <!-- <li></li> -->
+                           <li class="addedTag">Quora<span class="tagRemove">x</span></li>
+                           <li><input type="text" name="tags[]" class="tagText" value="Quora"></li>
+                           <!-- <li></li> -->
+                           <li class="addedTag">Yahoo<span class="tagRemove">x</span></li>
+                           <li><input type="text" name="tags[]" class="tagText" value="Yahoo"></li>                           
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div data-panel="panel-3">
+                  <div>
+                     <section>
+                        <span class="input input--minoru">
+                        <input class="input__field input__field--minoru" type="text" id="webUrl" placeholder='Website' />
+                        </label>
+                        </span>
+                        <span class="input input--minoru">
+                        <input class="input__field input__field--minoru" type="text" id="loginEmail" placeholder='Username' />
+                        </label>
+                        </span>
+                        <span class="input input--minoru">
+                        <input class="input__field input__field--minoru" type="password" id="loginPassword" placeholder='Password'/>
+                        </label>
+                        </span>
+						<span class="input input--minoru">
+                        <input class="input__field input__field--minoru" type="password" id="masterPasswd" placeholder='Master Password'/>
+                        </label>
+                        </span>
+                        <button class="progress-button" data-style="fill" id="SaveChanges" data-horizontal>Submit</button>	
+                     </section>
+                  </div>
+               </div>
+               
+               <nav>
+                  <span class="bl-next-work">&gt; New Login</span>
+                  <span class="bl-icon bl-icon-close"></span>
+               </nav>
+            </div>
+			
+         </div>
+      </div>
+	  
+	  <div class="text-center" id="social_icons">                        
+                <a href="https://www.facebook.com/" target="_blank"><i id="social-fb" class="fa fa-facebook circle fa-3x social"></i></a>
+	            <a href="https://twitter.com/" target="_blank"><i id="social-tw" class="fa fa-twitter circle fa-3x social"></i></a>
+	            <a href="https://plus.google.com/" target="_blank"><i id="social-gp" class="fa fa-google-plus circle fa-3x social"></i></a>
+	            <a href="mailto:sacro.saints@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope circle fa-3x social"></i></a>
+</div>
+	  
+      <!-- /container -->
+	  <script type="text/javascript" src="js/jquery.noty.packaged.min.js"></script>
+	  <script type="text/javascript" src="js/notification_html.js"></script>
+      <script src="js/classie.js"></script>
+	  <!-- <script src="js/notificationFx.js"></script> -->
+      <script src="js/selectFx.js"></script>
+      <script src="js/boxlayout.js"></script>
+      <script src="js/progressButton.js"></script>		
+      <script src="index.js"></script>		
+   </body>
+</html>

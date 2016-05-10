@@ -1,0 +1,54 @@
+{
+  "name": "Browse By Voice",
+  "version": "1.3.1",
+  "description": "Your personal voice activated browsing assistant",
+  "browser_action": {
+    "default_title": "Your personal browsing assistant",
+    "default_icon": "images/bbv_128.png",
+    "default_popup": "index.html"
+  },
+  "icons": { "16": "images/bbv_16.png",
+           "48": "images/bbv_64.png",
+          "128": "images/bbv_128.png" },
+  "background": {
+    "scripts": [
+		"eventPage.js"		
+	],
+	"persistent":true
+  },
+  "options_page": "options_custom/index.html",
+  "permissions": ["notifications",
+	"management",
+	"bookmarks",
+	"storage",
+	"browsingData",    
+    "tabs",
+    "geolocation",
+    "https://*/*",
+    "http://*/*"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*", "https://*/*"
+      ],
+      "js": [		
+		"js/jquery-2.0.2.min.js", 	
+		"js/jquery.visible.min.js",
+		"js/jquery.simulate.js",
+		"js/jquery.simulate.ext.js",
+		"js/bililiteRange.js",		
+		"js/jquery.simulate.key-sequence.js",				
+		"content_scripts/utilitiesContentScript.js",
+        "content_scripts/contentscript.js",
+		"index.js",		
+		"content_scripts/textContentScript.js",
+		"content_scripts/searchEngineContentScript.js",
+		"content_scripts/imageContentScript.js",
+		"content_scripts/videoContentScript.js",
+		"content_scripts/emailContentScript.js"
+      ]	  
+    }
+	],
+	"web_accessible_resources": ["web_resources/test.js"]
+}

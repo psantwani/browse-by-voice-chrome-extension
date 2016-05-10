@@ -1,0 +1,25 @@
+body{
+width: 300px;
+}
+/* 
+input[type="text"] {
+  width: 240px;
+} */
+
+#loginPassword{
+width: 140px;
+}
+
+.hide{
+  display : none;
+}
+
+#log {
+  background-color: rgb(226, 226, 250);
+  padding: 10px 20px;
+  margin-top: 10px;
+  height: 300px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
